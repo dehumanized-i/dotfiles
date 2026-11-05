@@ -1,0 +1,53 @@
+[window]
+opacity = 0.95
+decorations = "None"
+padding = { x = 10, y = 10 }
+
+# colors (miasma) https://github.com/xero/miasma.nvim
+[colors]
+indexed_colors = [{ index = 16, color = "0x222222"}]
+
+# Primary colors
+[colors.primary]
+foreground = "#c2c2b0"
+
+# Normal colors
+[colors.normal]
+black = "#222222"
+red = "#685742"
+green = "#5f875f"
+yellow = "#b36d43"
+blue = "#78824b"
+magenta = "#bb7744"
+cyan = "#c9a554"
+white = "#d7c483"
+
+# Bright colors
+[colors.bright]
+black = "#666666"
+red = "#685742"
+green = "#5f875f"
+yellow = "#b36d43"
+blue = "#78824b"
+magenta = "#bb7744"
+cyan = "#c9a554"
+white = "#d7c483"
+
+[font]
+size = 12.0
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Regular"
+
+[font.bold]
+family = "JetBrainsMono Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font"
+style = "Italic"
+
+[font.bold_italic]
+family = "JetBrainsMono Nerd Font"
+style = "Bold Italic"
