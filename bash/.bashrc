@@ -37,3 +37,5 @@ alias partition='cd /mnt/NuPartition/'
 alias whatsip='curl -x socks5h://127.0.0.1:1819 https://www.cloudflare.com/cdn-cgi/trace'
 alias lsa='ls -lah'
 alias repofiles='ls -lah /etc/dnf/repos.override.d/ /etc/yum.repos.d/ /usr/share/dnf5/repos.d/'
+
+HISTTIMEFORMAT="%Y-%m-%d %T "
