@@ -24,10 +24,12 @@ if [ -d ~/.bashrc.d ]; then
 fi
 unset rc
 
+# Starting every new terminal with a tmux session
 if command -v tmux >/dev/null 2>&1 && [ -z "$TMUX" ] && [[ $- == *i* ]]; then
   tmux new-session -A -s main
 fi
 
+# Aliases
 alias aether='/mnt/NuPartition/Downloads/VPN/Aether/aether'
 alias downloads='cd /mnt/NuPartition/Downloads/'
 alias myvault='cd /mnt/NuPartition/MyVault/"3 - Full Notes"'
@@ -38,4 +40,5 @@ alias whatsip='curl -x socks5h://127.0.0.1:18080 https://www.cloudflare.com/cdn-
 alias lsa='ls -lah'
 alias repofiles='ls -lah /etc/dnf/repos.override.d/ /etc/yum.repos.d/ /usr/share/dnf5/repos.d/'
 
+# Time & date for the `history` command
 HISTTIMEFORMAT="%Y-%m-%d %T "
