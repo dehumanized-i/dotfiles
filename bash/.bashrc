@@ -39,6 +39,9 @@ alias partition='cd /mnt/NuPartition/'
 alias whatsip='curl -x socks5h://127.0.0.1:18080 https://www.cloudflare.com/cdn-cgi/trace'
 alias lsa='ls -lah'
 alias repofiles='ls -lah /etc/dnf/repos.override.d/ /etc/yum.repos.d/ /usr/share/dnf5/repos.d/'
+alias p='poweroff'
+alias u='sudo dnf upgrade --refresh -y'
+alias r='reboot'
 
 # Time & date for the `history` command
 HISTTIMEFORMAT="%Y-%m-%d %T "
