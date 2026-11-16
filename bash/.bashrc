@@ -42,6 +42,7 @@ alias repofiles='ls -lah /etc/dnf/repos.override.d/ /etc/yum.repos.d/ /usr/share
 alias p='poweroff'
 alias u='sudo dnf upgrade --refresh -y'
 alias r='reboot'
+alias c='clear'
 
 # Time & date for the `history` command
 HISTTIMEFORMAT="%Y-%m-%d %T "
