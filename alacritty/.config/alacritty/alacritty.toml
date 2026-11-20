@@ -1,37 +1,7 @@
 [window]
-opacity = 0.97
+opacity = 1
 decorations = "None"
 padding = { x = 10, y = 10 }
-
-# colors (miasma) https://github.com/xero/miasma.nvim
-[colors]
-indexed_colors = [{ index = 16, color = "0x222222"}]
-
-# Primary colors
-[colors.primary]
-foreground = "#c2c2b0"
-
-# Normal colors
-[colors.normal]
-black = "#222222"
-red = "#685742"
-green = "#5f875f"
-yellow = "#b36d43"
-blue = "#78824b"
-magenta = "#bb7744"
-cyan = "#c9a554"
-white = "#d7c483"
-
-# Bright colors
-[colors.bright]
-black = "#666666"
-red = "#685742"
-green = "#5f875f"
-yellow = "#b36d43"
-blue = "#78824b"
-magenta = "#bb7744"
-cyan = "#c9a554"
-white = "#d7c483"
 
 [font]
 size = 12.0
@@ -51,3 +21,32 @@ style = "Italic"
 [font.bold_italic]
 family = "JetBrainsMono Nerd Font"
 style = "Bold Italic"
+
+# Colors (Gruvbox Material Medium Dark)
+
+# Default colors
+[colors.primary]
+background = '#282828'
+foreground = '#d4be98'
+
+# Normal colors
+[colors.normal]
+black   = '#3c3836'
+red     = '#ea6962'
+green   = '#a9b665'
+yellow  = '#d8a657'
+blue    = '#7daea3'
+magenta = '#d3869b'
+cyan    = '#89b482'
+white   = '#d4be98'
+
+# Bright colors (same as normal colors)
+[colors.bright]
+black   = '#3c3836'
+red     = '#ea6962'
+green   = '#a9b665'
+yellow  = '#d8a657'
+blue    = '#7daea3'
+magenta = '#d3869b'
+cyan    = '#89b482'
+white   = '#d4be98'
