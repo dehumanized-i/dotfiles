@@ -1,6 +1,6 @@
 # dotfiles
 
-Personal Fedora configs for a minimal, keyboard-centric terminal workflow, themed with [Miasma](https://github.com/xero/miasma.nvim) and managed with [GNU Stow](https://www.gnu.org/software/stow/).
+Personal Fedora configs for a minimal, keyboard-centric terminal workflow, themed with [gruvbox-material](https://github.com/sainnhe/gruvbox-material) and managed with [GNU Stow](https://www.gnu.org/software/stow/).
 
 ## Packages
 
@@ -8,7 +8,7 @@ Each top-level folder is a Stow package that mirrors the layout of `$HOME`.
 
 | Package | Target | What it configures |
 | :--- | :--- | :--- |
-| `alacritty` | `~/.config/alacritty/alacritty.toml` | Borderless window, `0.97` opacity, 10px padding, JetBrainsMono Nerd Font 12, Miasma colors |
+| `alacritty` | `~/.config/alacritty/alacritty.toml` | Borderless window, 10px padding, JetBrainsMono Nerd Font 12, gruvbox_material_medium_dark colors |
 | `bash` | `~/.bashrc` | Auto-attaches to a tmux `main` session, timestamped history, DNF and navigation aliases |
 | `btop` | `~/.config/btop/btop.conf` | `TTY` theme (inherits terminal colors), transparent background, rounded corners, braille graphs |
 | `fastfetch` | `~/.config/fastfetch/config.jsonc` | System info in three color-coded groups: OS, desktop/terminal, hardware/network |
@@ -18,7 +18,7 @@ Each top-level folder is a Stow package that mirrors the layout of `$HOME`.
 
 ## Notable details
 
-- **bash:** key aliases are `u` (`sudo dnf upgrade --refresh -y`), `lsa` (`ls -lah`), `repofiles` (list DNF repo dirs), and `p`/`r` (poweroff/reboot). `whatsip` queries Cloudflare's trace endpoint through a local SOCKS5 proxy at `127.0.0.1:18080`.
+- **bash:** key aliases are `u` (`sudo dnf upgrade --refresh -y`), `repofiles` (list DNF repo dirs), and `p`/`r` (poweroff/reboot). `whatsip` queries Cloudflare's trace endpoint through a local SOCKS5 proxy at `127.0.0.1:18080`.
 - **vim:** the cursor is a block in Normal mode, a bar in Insert mode, and an underline in Replace mode.
 - **tmux:** the low `escape-time` makes mode switching in Vim feel instant.
 
