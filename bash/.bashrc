@@ -32,7 +32,7 @@ fi
 # Aliases
 alias aether='/mnt/NuPartition/Downloads/VPN/Aether/aether'
 alias downloads='cd /mnt/NuPartition/Downloads/'
-alias myvault='cd /mnt/NuPartition/MyVault/"3 - Full Notes"'
+alias myvault='cd /mnt/NuPartition/MyVault/"3-Full-Notes"'
 alias ccna='cd /mnt/NuPartition/CCNA'
 alias vpn='cd /mnt/NuPartition/Downloads/VPN'
 alias partition='cd /mnt/NuPartition/'
