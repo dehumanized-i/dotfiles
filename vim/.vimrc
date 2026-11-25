@@ -34,12 +34,11 @@ let g:mode_color = {
       \ 's': 5, 'S': 5, "\<C-s>": 5,
       \ 'c': 3, 't': 2 }
 
-" --- Statusline: whole bar is recolored per mode ---
+" --- Statusline: dark bar with an inverted box for the mode ---
 " mode()[0] collapses 'no', 'niI', 'Rv', 'cv', 'nt', ... to their base mode.
 set laststatus=2
 set noshowmode
-let &statusline = ' %{get(g:mode_map, mode()[0], mode())}  %f %m%r%=%y %l:%c %p%% '
-
+let &statusline = '%#ModeSection# %{get(g:mode_map, mode()[0], mode())} %* %f %m%r%=%y %l:%c %p%% '
 let s:last_color = -1
 
 function! s:ModeColor(m, force) abort
@@ -49,8 +48,9 @@ function! s:ModeColor(m, force) abort
     return
   endif
   let s:last_color = l:c
-  execute 'highlight StatusLine ctermfg=0 ctermbg=' . l:c . ' cterm=bold'
+  highlight StatusLine   ctermfg=7 ctermbg=0 cterm=NONE
   highlight StatusLineNC ctermfg=7 ctermbg=8 cterm=NONE
+  execute 'highlight ModeSection ctermfg=0 ctermbg=' . l:c . ' cterm=bold'
   " :terminal windows use their own groups
   highlight! link StatusLineTerm   StatusLine
   highlight! link StatusLineTermNC StatusLineNC
